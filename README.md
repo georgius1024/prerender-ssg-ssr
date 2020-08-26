@@ -4,9 +4,9 @@
 
 Для продвижения сайта реализованы следующие варианты:
 * base - исходный вариант, все страницы динамические
-* prerendering - vue-cli-plugin-prerender-spa
-* ststic site generation - gridsome.js
-* server side rendering - nuxt.js
+* pre - prerendering - vue-cli-plugin-prerender-spa
+* ssg - static site generation - gridsome.js
+* ssr - server side rendering - nuxt.js
 
 Для сборки и запуска используйте команды:
 * `yarn base`
