@@ -4,9 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "base": "cd base&&yarn&&rm -rf dist&&yarn build&&cd dist&&npx ws -z -o",
+    "pre": "cd pre&&yarn&&rm -rf dist&&yarn build&&cd dist&&npx ws -z -o",
+    "ssg": "cd ssg&&yarn&&rm -rf dist&&yarn build&&cd dist&&npx ws -z -o",
+    "ssr": "cd ssr&&yarn&&rm -rf dist&&yarn build&&xdg-open http://localhost:3000&&yarn start"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Yurii Timofeev, Otus",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "ws": "^7.3.1"
+  }
 }
