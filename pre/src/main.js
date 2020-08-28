@@ -11,6 +11,6 @@ new Vue({
   router,
   vuetify,
   render: h => h(App),
-  mounted: () => document.dispatchEvent(new Event('x-app-rendered')),
+  mounted: () => setTimeout(() => document.dispatchEvent(new Event('x-app-rendered')), 1000),
   store: new Vuex.Store(store)
 }).$mount('#app')
